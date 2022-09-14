@@ -133,8 +133,7 @@ displayHistory();
 setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpent = (currentTime - startTime) / 1000;
-  const timeSpentNumber = parseInt(timeSpent);
-  // console.log(parseInt(timeSpent));
+  const timeSpentNumber = parseInt(timeSpent + 1);
 
 
   document.getElementById("show-time").innerHTML = `${startTime ? timeSpentNumber : 0} seconds`;
