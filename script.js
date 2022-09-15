@@ -46,7 +46,7 @@ const typeController = (e) => {
   // console.log(newLetterCorrect);
   if(!newLetterCorrect){
     errorCount++;
-    console.log(errorCount);
+    // console.log(errorCount);
   }
   // errorCount += errorCount;
   // console.log(errorCount);
@@ -121,6 +121,7 @@ const start = () => {
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;
     // finished timer
     if (count === 0) {
+      countdownOverlay.innerHTML = ``;
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "flex";
